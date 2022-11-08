@@ -11,7 +11,7 @@ pipeline {
         stage('Set commit'){
             steps {
                 script {
-                    if(${COMMIT_SHA} != ""){
+                    if("${COMMIT_SHA}" != ""){
                         sh "git reset --hard ${COMMIT_SHA}"
                     }
                 }
