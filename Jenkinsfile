@@ -1,11 +1,14 @@
-stages {
+pipeline {
 
-    agent any
+    agent none
 
-    stage('Write readme'){
+    stages {
 
-        sh 'cat README.md'
+        stage('Echo README') {
+            steps {
+                sh "cat README.md"
+            }
+        }
 
     }
-
 }
