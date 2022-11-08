@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
 
-                    sh "echo ${COMMIT_SHA}"
+                    sh "echo ${env.COMMIT_SHA}"
 
                 }
             }
