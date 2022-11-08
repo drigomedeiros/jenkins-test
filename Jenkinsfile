@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     if(env.COMMIT_SHA != null) {
-                        sh "echo ${env.COMMIT_SHA}"
+                        sh "git reset --hard ${env.COMMIT_SHA}"
                     }
                 }
             }
