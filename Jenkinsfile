@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        COMMIT_SHA = ""
+        COMMIT_SHA = "rodrigo"
     }
 
     stages {
