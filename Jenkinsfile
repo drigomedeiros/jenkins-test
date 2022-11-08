@@ -11,7 +11,7 @@ pipeline {
         stage('Set commit'){
             steps {
                 script {
-                    if("${env.COMMIT_SHA}" != "") {
+                    if("${env.COMMIT_SHA}" != null) {
                         sh "echo ${env.COMMIT_SHA}"
                     }
                 }
