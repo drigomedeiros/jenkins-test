@@ -8,7 +8,7 @@ pipeline {
 
     stages {
 
-        parallel('Prepare') {
+        parallel {
 
             stage('Set commit'){
                 steps {
