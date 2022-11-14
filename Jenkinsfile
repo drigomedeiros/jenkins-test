@@ -28,7 +28,7 @@ pipeline {
 
         }
 
-        stage('Build') {
+        parallel {
 
             stage('Set commit'){
                 steps {
